@@ -1,5 +1,5 @@
 # Electricity Knowledge Graph
-This repository contains the source code and the dataset for the paper [Towards Data-Driven Electricity Management: Multi-Region Harmonized Data and Knowledge Graph](https://arxiv.org/abs/2405.18869)
+This repository contains the source code and the dataset for the paper [Towards Data-Driven Electricity Management: Multi-Region Harmonized Data and Knowledge Graph](https://www.nature.com/articles/s41597-024-04310-z)
 
 The repository includes downloads for the datasets and all the neccesary code to run the pipeline for preprocessing the data and generating the knowledge graph. The knowledge graph is generated from a set of raw datasets containing electricity consumption data from multiple regions and households. The data is preprocessed and harmonized to generate a knowledge graph containing information about the households, appliances, and electricity consumption.
 We also provide a model training pipeline that can be used to train a model for on/off appliance classification.
@@ -56,7 +56,7 @@ The full raw dump contains all the datasets and their coresponding metadata, whi
 * All raw datasets can be downloaded separately from the [data folder](http://sensorlab.ijs.si/archive/energy-knowledge-graph/partial-files-raw/)
 
 
-The following files are also available for download on figshare: (TODO link when available):
+The following files are also available for download on  [figshare](https://springernature.figshare.com/articles/dataset/Towards_data-driven_electricity_management_multi-region_harmonized_data_and_knowledge_graph/27016456):
 * Metadata dump(1.2 GB): [metadata.tar.gz](https://sensorlab.ijs.si/archive/energy-knowledge-graph/partial-files-raw/metadata.tar.gz)
 * Triples dump (125 MB): [triples.ttl](http://sensorlab.ijs.si/archive/energy-knowledge-graph/triples.ttl)
 * Harmonized data dump(80 GB): [harmonized.tar.gz](http://sensorlab.ijs.si/archive/energy-knowledge-graph/harmonized.tar.gz)
@@ -228,12 +228,22 @@ SELECT DISTINCT ?houseName ?city ?dbpediaCity ?wikidataCity WHERE {
 
 If you use this dataset or pipeline in your research, citation of the following paper, which also provides additional details about the dataset and the processing pipeline, would be greatly appreciated:
 ```
-    @article{hanzel2024datadriven,
-          title={Towards Data-Driven Electricity Management: Multi-Region Harmonized Data and Knowledge Graph}, 
-          author={Vid Hanžel and Blaž Bertalanič and Carolina Fortuna},
-          year={2024},
-          eprint={2405.18869},
-          archivePrefix={arXiv},
-          primaryClass={cs.LG}
+    ﻿@Article{Hanzel2025,
+    author={Hanzel, Vid
+    and Bertalanic, Blaz
+    and Fortuna, Carolina},
+    title={Towards data-driven electricity management: multi-region uniform data and knowledge graph},
+    journal={Scientific Data},
+    year={2025},
+    month={Jan},
+    day={09},
+    volume={12},
+    number={1},
+    pages={38},
+    issn={2052-4463},
+    doi={10.1038/s41597-024-04310-z},
+    url={https://doi.org/10.1038/s41597-024-04310-z}
+}
+
     }
 ```
